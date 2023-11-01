@@ -1,16 +1,11 @@
-<?php
-// index.php
-get_header(); // Include header.php
-echo "this is index";
-?>
-
+<?php get_header();?>
 <!-- Main Content -->
 <div id="main-content">
     <?php
     // Check if it's the front page
     if (is_front_page()) :
         // Include the content of home.php
-        get_template_part('home');
+        get_template_part('home.php');
     else :
         // Display regular posts or pages
         if (have_posts()) :
@@ -24,7 +19,4 @@ echo "this is index";
     endif;
     ?>
 </div>
-
-<?php
-get_footer(); // Include footer.php
-?>
+<?php get_footer(); ?>

@@ -1,5 +1,5 @@
 <?php
-get_template_part('templates/header');
+get_header();
 echo get_template_directory_uri();
 
 echo "<h1>Hi this is working.</h1>"
@@ -16,5 +16,5 @@ echo "<h1>Hi this is working.</h1>"
 </html>
 
 <?php
-get_template_part('templates/footer');
+get_footer();
 ?>
