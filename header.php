@@ -8,17 +8,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header>
-    <nav>
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'primary',
-            'container' => 'div',
-            'container_class' => 'main-navigation',
-            'fallback_cb' => 'silversandsclinic_default_menu', // Fallback function
-        ));
-        ?>
-    </nav>
-</header>
+<?php
+    get_template_part( 'templates/header_content' );
+?>
 
 <div id="content" class="site-content">

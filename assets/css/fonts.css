@@ -46,8 +46,8 @@
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 900;
-    src: url('fonts/woff2/PeydaWeb-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-    url('fonts/woff/PeydaWeb-Black.woff') format('woff')  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    src: url('../fonts/woff2/PeydaWeb-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/PeydaWeb-Black.woff') format('woff')  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
     font-family: PeydaWeb;
