@@ -54,6 +54,7 @@ class SilversandsClinicTheme {
             'articles' => '/templates/page-articles.php',
             'about-us' => '/templates/page-about-us.php',
             'contact-us' => '/templates/page-contact-us.php',
+            'sample-page' => '/templates/page-sample-page.php'
         );
 
         $post = get_post();

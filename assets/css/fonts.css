@@ -1,5 +1,6 @@
 
 @font-face {
+    /*font wieght: Thin*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 100;
@@ -7,6 +8,7 @@
     url('../fonts/woff/PeydaWeb-Thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: Extra Light*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 200;
@@ -14,6 +16,7 @@
     url('../fonts/woff/PeydaWeb-ExtraLight.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: Light*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 300;
@@ -21,6 +24,7 @@
     url('../fonts/woff/PeydaWeb-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: Medium*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 500;
@@ -28,6 +32,7 @@
     url('../fonts/woff/PeydaWeb-Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: SemiBold*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 600;
@@ -36,6 +41,7 @@
 }
 
 @font-face {
+    /*font wieght: Extra Bold*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 800;
@@ -43,6 +49,7 @@
     url('../fonts/woff/PeydaWeb-ExtraBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: Black*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: 900;
@@ -50,6 +57,7 @@
     url('../fonts/woff/PeydaWeb-Black.woff') format('woff')  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: Bold*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: bold;
@@ -57,6 +65,7 @@
     url('../fonts/woff/PeydaWeb-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
+    /*font wieght: Regular*/
     font-family: PeydaWeb;
     font-style: normal;
     font-weight: normal;
