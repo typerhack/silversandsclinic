@@ -16,6 +16,7 @@ class SilversandsClinicTheme {
         wp_enqueue_style('silversandsclinic-reset', get_template_directory_uri() . '/assets/css/reset.css');
         wp_enqueue_style('silversandsclinic-fonts', get_template_directory_uri() . '/assets/css/fonts.css');
         wp_enqueue_style('silversandsclinic-style', get_stylesheet_uri());
+        wp_enqueue_style('silversandsclinic-fonts', get_template_directory_uri() . '/assets/css/responsive.css');
     }
 
     // This adds the jquery v3.7.1

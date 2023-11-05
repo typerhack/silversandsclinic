@@ -6,10 +6,10 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 
 <?php
     get_template_part( 'templates/header_content' );
 ?>
 
-<div id="content" class="site-content">
+<div id="content" class="body_padding site-content">

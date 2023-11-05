@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer">
+    <div class="body_padding footer">
         <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
 
         <!-- Optional: Footer navigation, social links, etc. -->

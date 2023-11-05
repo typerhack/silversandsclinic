@@ -1,0 +1,18 @@
+/*This stylesheet contains the code for responsive design*/
+/*This part is for screen up to 376px*/
+@media screen and (max-width: 376px) {
+    /* Your CSS rules for devices with width up to 376px go here */
+    /*------------------------------------------*/
+    /*Paddings*/
+    .body_padding{
+        padding: 0 1.25rem;
+    }
+    /*Container flex properties*/
+    .flex_container_row{
+        column-gap: 1rem;
+    }
+    /*Header Formatting*/
+    .header_bar_icon{
+        display: none;
+    }
+}

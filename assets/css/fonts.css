@@ -72,3 +72,190 @@
     src: url('../fonts/woff2/PeydaWeb-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
     url('../fonts/woff/PeydaWeb-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
+/*This part applies the fonts base on mobile or desktop*/
+/*Mobile fonts classes*/
+/*------------------------------------------*/
+/*Font size: sm*/
+.font_sm_sbold{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.font_sm_lite{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.font_sm_link{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+/*------------------------------------------*/
+/*Font size: xs*/
+.font_xs_sbold{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+.font_xs_lite{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+.font_xs_link{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+/*------------------------------------------*/
+/*Font size: 2xs*/
+.font_2xs_sbold{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+.font_2xs_lite{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+.font_2xs_link{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+/*------------------------------------------*/
+/*Font size: 3xs*/
+.font_3xs_sbold{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+.font_3xs_lite{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+.font_3xs_link{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+/*Desktop fonts classes*/
+@media screen and (min-width: 768px){
+    /*ّFont size: 6xl*/
+    .font_display_6xl_regular{
+        font-family: PeydaWeb, serif;
+        font-weight: normal;
+        font-size: 56px;
+        letter-spacing: 0;
+    }
+    /*------------------------------------------*/
+    /*Font size: 5xl*/
+    h1, .font_5xl_regular{
+        font-family: PeydaWeb, 'serif';
+        font-weight: normal;
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+    /*------------------------------------------*/
+    /*Font size: 4xl*/
+    h2, .font_4xl_regular{
+        font-family: PeydaWeb, 'serif';
+        font-weight: normal;
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+    /*------------------------------------------*/
+    /*Font size: 3xl*/
+    h3, .font_3xl{
+        font-family: PeydaWeb, 'serif';
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+    .h3_regular, .font_3xl_regular{
+        font-weight: normal;
+    }
+    .h3_lite, .font_3xl_lite{
+        font-weight: 300;
+    }
+    /*------------------------------------------*/
+    /*Font size: 2xl*/
+    h4, .font_2xl{
+        font-family: PeydaWeb, 'serif';
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+    .h4_regular, .font_2xl_regular{
+        font-weight: normal;
+    }
+    .h4_lite, .font_2xl_lite{
+        font-weight: 300;
+    }
+    /*------------------------------------------*/
+    /*Font size: xl*/
+    h5, .font_xl{
+        font-family: PeydaWeb, 'serif';
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .h5_regular, .font_xl_regular{
+        font-weight: normal;
+    }
+    .h5_lite, .font_xl_lite{
+        font-weight: 300;
+    }
+    /*------------------------------------------*/
+    /*Font size: lg*/
+    h6, .font_lg{
+        font-family: PeydaWeb, 'serif';
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+    .h6_regular, .font_lg_regular{
+        font-weight: normal;
+    }
+    .h6_lite, .font_lg_lite{
+        font-weight: 300;
+    }
+    /*------------------------------------------*/
+    /*Font size: base*/
+    p, .font_base_regular{
+        font-family: PeydaWeb, 'serif';
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .font_base_lite{
+        font-family: PeydaWeb, 'serif';
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .font_base_exlite{
+        font-family: PeydaWeb, 'serif';
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .font_base_link{
+        font-family: PeydaWeb, 'serif';
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+}

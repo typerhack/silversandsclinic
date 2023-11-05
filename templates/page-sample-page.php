@@ -30,6 +30,24 @@ get_header();
     <li class="font_sm_link"> این فونت sm لایت است</li>
 </ol>
 <br>
+<ol>
+    <li class="font_xs_sbold">این فونت سمی بولد xs است</li>
+    <li class="font_xs_lite"> این فونت xs لایت است</li>
+    <li class="font_xs_link"> این فونت xs لایت است</li>
+</ol>
+<br>
+<ol>
+    <li class="font_2xs_sbold">این فونت سمی بولد 2xs است</li>
+    <li class="font_2xs_lite"> این فونت 2xs لایت است</li>
+    <li class="font_2xs_link"> این فونت 2xs لایت است</li>
+</ol>
+<br>
+<ol>
+    <li class="font_3xs_sbold">این فونت سمی بولد 3xs است</li>
+    <li class="font_3xs_lite"> این فونت 3xs لایت است</li>
+    <li class="font_3xs_link"> این فونت 3xs لایت است</li>
+</ol>
+<br>
 <?php
 get_footer();
 ?>
