@@ -10,11 +10,53 @@ License URI: https://letsdomarketing.ir/license/
 Text Domain: ssc-theme
 */
 
-/*
-Defining fot style for the website
-*/
-/*Header fonts are applied inside font.css*/
 
+/*------------------------------------------*/
+/*Defining fot style for the website*/
+/*------------------------------------------*/
+/*Header fonts are applied inside font.css*/
+/*------------------------------------------*/
+/*Defining Variables*/
+:root{
+    /*------------------------------------------*/
+    /*Neutral Colors*/
+    --white-color: #FFFFFF;
+    --neutral-50-color: #FAFAFA;
+    --neutral-100-color: #F3F3F3;
+    --neutral-200-color: #E9E9E9;
+    --neutral-300-color: #CBCBCB;
+    --neutral-400-color: #A3A3A3;
+    --neutral-500-color: #717171;
+    --neutral-600-color: #585858;
+    --neutral-700-color: #404040;
+    --neutral-800-color: #282828;
+    --neutral-900-color: #1A1A1A;
+    --neutral-950-color: #0D0D0D;
+
+    /*------------------------------------------*/
+    /*Primary Colors*/
+    --rain-color: #FCFBF9;
+    --rain-70-color: #FCFBF9;
+    --ivory-color: #F9F5F2;
+    --sand-color: #e7dfd4;
+    --sand-80-color: #e7dfd4cc;
+    --stone-color: #C4BFB9;
+    --moon-color: #5F5E66;
+    --siena-color: #b47250;
+    --siena-60-color: #B4725099;
+    --terra_cotta-color: #C09A85;
+    --terra_cotta-60-color: #C09A8599;
+    --sage-color: #A6A998;
+    --crocodile-color:#80865B;
+
+    /*------------------------------------------*/
+    /*State Colors*/
+    --success-color: #3BAE62;
+    --danger-color: #C54331;
+    --danger-60-color: #C5433199;
+    --warning-color: #D5A937;
+
+}
 /*Resetting lin tag <a>*/
 a{
     text-decoration: none;
@@ -36,11 +78,19 @@ a{
     display: flex;
     flex-direction: column;
 }
+.flex_container_justify{
+    justify-content: center;
+}
 /*------------------------------------------*/
 /*Header Formatting*/
+.header_container{
+    padding-bottom: 1.5rem;
+}
+/*------------------------------------------*/
+/*Header bar*/
 .header_bar{
     background-color: #e7dfd4;
-    height: 50px;
+    height: 3.125rem;
 
 }
 .header_bar_location{
@@ -50,4 +100,151 @@ a{
     display: flex;
     flex-direction: row;
     column-gap: 16px;
+    align-items: center;
 }
+/*------------------------------------------*/
+/*Header logo*/
+.header_logo{
+    margin: 1.5rem 0;
+}
+/*------------------------------------------*/
+/*Header dark mode toggle*/
+.header_dark-mode_toggle{
+    margin-left: 10rem;
+    display: flex;
+}
+.header_dark-mode_toggle_input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.header_dark-mode_toggle_label{
+    width: 5rem;
+    height: 2.1rem;
+    border-radius: 200px;
+    border: solid var(--siena-color) 2px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.3s;
+}
+.header_dark-mode_toggle_label:after{
+    content: "";
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top:.1rem;
+    bottom: .1rem;
+    right: .1rem;
+    background-color: white;
+    border-radius: 200px;
+    border: solid var(--siena-color) 1px;
+    transition-duration: 0.3s;
+    background-color: rgba(180, 114, 80, 60%);
+}
+
+.header_dark-mode_toggle_label:active:after{
+    width: 3rem;
+}
+.header_dark-mode_toggle_input:checked + .header_dark-mode_toggle_label{
+    background-color: #282828;
+}
+.header_dark-mode_toggle_input:checked + .header_dark-mode_toggle_label:after{
+    right:4.9rem;
+    transform: translateX(100%);
+    background-color: rgba(255, 255, 255, 60%);
+}
+.header_dark-mode_toggle_sun_icon{
+    top:.6rem;
+    right:.5rem;
+    position: absolute;
+    stroke: var(--siena-color);
+    z-index: 100;
+    transition-duration: 0.3s;
+}
+.header_dark-mode_toggle_moon_icon{
+    top:.6rem;
+    left: .5rem;
+    position: absolute;
+    stroke: #7e7e7e;
+    z-index: 100;
+    transition-duration: 0.3s;
+}
+.header_dark-mode_toggle_input:checked + .header_dark-mode_toggle_label .header_dark-mode_toggle_sun_icon {
+    stroke: white;
+}
+.header_dark-mode_toggle_input:checked + .header_dark-mode_toggle_label .header_dark-mode_toggle_moon_icon {
+    stroke: var(--siena-color);
+}
+/*------------------------------------------*/
+/*Header navigation*/
+.header_navigation_container{
+    flex-grow: 2;
+    color: #404040;
+}
+.header_navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav_active {
+    text-decoration: underline 2px #404040;
+    text-underline-offset: 1.5rem;  /* Adjust this value as needed */
+}
+.header_navigation ul li:hover{
+    text-decoration: underline 2px #404040;
+    text-underline-offset: 1.5rem;  /* Adjust this value as needed */
+}
+/*------------------------------------------*/
+/*Header reservation button*/
+.reservation_btn{
+    border: solid 2px var(--siena-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 10rem;
+}
+.reservation_btn_link{
+    color: var(--siena-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.reservation_btn_icon{
+    stroke: var(--siena-color);
+}
+/*------------------------------------------*/
+/*Header mega menu*/
+.header_navigation_mega_menu_container{
+    position: relative;
+}
+.header_navigation_mega_menu{
+    margin-top: 0.6rem;
+    align-items: start;
+    background-color: var(--sand-80-color);
+    padding: 2.5rem 12.75rem 4rem 12.75rem;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: none;
+    /* Add the backdrop-filter with a blur effect */
+    backdrop-filter: blur(10px);
+    /* You might want to add a fallback background color in case backdrop-filter is not supported */
+    background: var(--sand-80-color);; /* Example fallback color */
+}
+.header_navigation_mega_menu_item{
+    width: 25%;
+}
+.header_navigation_mega_menu_item img{
+    margin-bottom: 1.25rem;
+}
+.header_navigation_mega_menu_item ul li{
+    margin-bottom: 1.25rem;
+    color: var(--neutral-600-color);
+}
+.header_navigation_mega_menu_item ul li a{
+    color: var(--neutral-600-color);
+}
+.header_navigation_mega_menu_item ul li:first-child a{
+    color: var(--neutral-700-color);
+}
+

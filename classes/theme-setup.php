@@ -75,6 +75,10 @@ class SilversandsClinicTheme {
 
     public function setup_theme() {
         register_nav_menus(array('primary' => __('Primary Menu', 'silversandsclinic')));
+        register_nav_menus(array('mega_menu_col1' => __('Mega Menu Column 1', 'silversandsclinic')));
+        register_nav_menus(array('mega_menu_col2' => __('Mega Menu Column 2', 'silversandsclinic')));
+        register_nav_menus(array('mega_menu_col3' => __('Mega Menu Column 3', 'silversandsclinic')));
+        register_nav_menus(array('mega_menu_col4' => __('Mega Menu Column 4', 'silversandsclinic')));
     }
 
     public static function default_menu() {
@@ -88,4 +92,45 @@ class SilversandsClinicTheme {
         echo '<li><a href="' . home_url('/contact-us') . '">تماس با ما</a></li>';
         echo '</ul>';
     }
+
+    public static function default_mega_menu_col1(){
+        echo '<ul>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item_header font_base_regular"><a href="' . home_url() . '">پوست</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">درمان بیماری&zwnj;های پوستی</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">رفع جای جوش،</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">جوانسازی پوست</<a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">پاکسازی پوست</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">اسکن صورت با دستگاه Visio</a></li>';
+        echo '</ul>';
+    }
+    public static function default_mega_menu_col2(){
+        echo '<ul>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item_header font_base_regular"><a href="' . home_url() . '">مو</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">درمان ریزش مو</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">کاشت</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">تزریق مزو مو</<a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">PRP</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">لیزر موهای زائد</a></li>';
+        echo '</ul>';
+    }
+    public static function default_mega_menu_col3(){
+        echo '<ul>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item_header font_base_regular"><a href="' . home_url() . '">زیبایی</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">تزریق فیلر</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">تزریق بوتاکس</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">تزریق مزو و مزوفیلر</<a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">لیفت با نخ</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">جراحی&zwnj;های زیبایی</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">تزریق چربی</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">زیبایی زنان</a></li>';
+        echo '</ul>';
+    }
+    public static function default_mega_menu_col4(){
+        echo '<ul>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item_header font_base_regular"><a href="' . home_url() . '">تناسب اندام</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">دستگاه های لاغری</a></li>';
+        echo '<li class="header_navigation_mega_menu_item_menu_item font_base_regular"><a href="' . home_url() . '">آنالیز بدن (BIA) بادستگاه Inbody</a></li>';
+        echo '</ul>';
+    }
 }
+
