@@ -12,7 +12,12 @@
         column-gap: 1rem;
     }
     /*Header Formatting*/
-    .header_bar_icon{
+    .header_bar_social_medias_icons{
+        display: none;
+    }
+    /*------------------------------------------*/
+    /*Menu styling*/
+    .header_desktop_menu{
         display: none;
     }
 }
