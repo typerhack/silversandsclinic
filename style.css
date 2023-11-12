@@ -345,3 +345,56 @@ a:hover{
 .footer_ldm p a:hover{
     color: var(--siena-color);
 }
+/*------------------------------------------*/
+/*Styling the home page*/
+.home_banner{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+
+}
+.home_banner_left_note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home_banner_left_note_text{
+    text-transform: uppercase;
+    font-family: "Playfair Display SC",serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    letter-spacing: 2px;
+    color: var(--neutral-400-color);
+    margin-bottom: 1rem;
+}
+.home_banner_left_note_line{
+    width: 1px; /* Adjust the width as needed */
+    height: 5rem;
+    background-color: var(--neutral-400-color);
+}
+.home_banner_heading_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: clamp(0.1015625rem, -5.0734rem + 22.5612vw, 22rem);;
+    margin-left: clamp(0.1015625rem, -3.8918rem + 17.4099vw, 17rem);;
+}
+.home_banner_heading_text{
+    text-transform: uppercase;
+    font-family: "Playfair Display SC", serif;
+    font-size: clamp(0.140625rem, -1.0077rem + 5.0064vw, 5rem);;
+    font-weight: normal;
+}
+.home_banner_heading_text span{
+    font-size: clamp(0.171875rem, -1.2054rem + 6.0045vw, 6rem);;
+}
+.home_banner_heading_image{
+    vertical-align: middle;
+    width: clamp(0.3125rem, -2.095rem + 10.4958vw, 10.5rem);;
+}

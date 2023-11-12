@@ -10,6 +10,8 @@ class SilversandsClinicTheme {
         add_action('after_setup_theme', array($this, 'setup_theme'));
         // Adding jquery to the theme
         add_action('wp_enqueue_scripts', array($this, 'enqueue_custom_script'));
+		// Adding classes to body
+	    add_filter('body_class', array($this, 'add_custom_body_class'));
     }
 
     public function enqueue_styles() {
@@ -26,6 +28,15 @@ class SilversandsClinicTheme {
         // Adding theme js script
         wp_enqueue_script('theme-script', get_template_directory_uri() . '/assets/js//script.js', array(), null, true);
     }
+	// This adds class body section
+	function add_custom_body_class( $classes ) {
+		// Add 'custom-class' to the $classes array
+		$classes[] = '';
+
+		// Return the array
+		return $classes;
+	}
+	// Here we are creating not existed page
     public function create_pages() {
         $pages = array(
             'خانه' => array('content' => 'Description or content for home page.', 'slug' => 'home'),
@@ -73,6 +84,7 @@ class SilversandsClinicTheme {
         return $template;
     }
 
+//	Here we are adding navigation menus
     public function setup_theme() {
         register_nav_menus(array('primary' => __('Primary Menu', 'silversandsclinic')));
         register_nav_menus(array('mega_menu_col1' => __('Mega Menu Column 1', 'silversandsclinic')));
