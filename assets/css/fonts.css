@@ -231,31 +231,31 @@
     .h6_lite, .font_lg_lite{
         font-weight: 300;
     }
-    /*------------------------------------------*/
-    /*Font size: base*/
-    p, .font_base_regular{
-        font-family: PeydaWeb, 'serif';
-        font-weight: normal;
-        font-size: 16px;
-        letter-spacing: 0;
-    }
-    .font_base_lite{
-        font-family: PeydaWeb, 'serif';
-        font-weight: 300;
-        font-size: 16px;
-        letter-spacing: 0;
-    }
-    .font_base_exlite{
-        font-family: PeydaWeb, 'serif';
-        font-weight: 200;
-        font-size: 16px;
-        letter-spacing: 0;
-    }
-    .font_base_link{
-        font-family: PeydaWeb, 'serif';
-        font-weight: 200;
-        font-size: 16px;
-        letter-spacing: 0;
-    }
 
+}
+/*------------------------------------------*/
+/*Font size: base*/
+p, .font_base_regular{
+    font-family: PeydaWeb, 'serif';
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.font_base_lite{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.font_base_exlite{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.font_base_link{
+    font-family: PeydaWeb, 'serif';
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0;
 }

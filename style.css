@@ -265,8 +265,10 @@ a:hover{
 .footer_container_section{
     display: flex;
     flex-direction: row;
-    column-gap: 8.5rem;
+    column-gap: 5%;
     margin-top: 3.75rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .footer_container_section>*{
     min-width: 12.5rem;
@@ -297,7 +299,7 @@ a:hover{
     letter-spacing: 0;
 }
 .footer_container ul li a{
-    color: var(--white-color);
+    color: var(--neutral-200-color);
 }
 .footer_container ul li a:hover{
     color: var(--siena-color);
@@ -310,9 +312,7 @@ a:hover{
     letter-spacing: 0;
     margin-left: .75rem;
 }
-.footer_contact_us ul li a{
-    color: var(--white-color);
-}
+
 .footer_contact_us ul li a:hover{
     color: var(--siena-color);
 }
@@ -333,14 +333,14 @@ a:hover{
 .footer_ldm{
     display: flex;;
     justify-content: end;
-    color:var(--white-color);
+    color:var(--neutral-200-color);
 }
 .footer_ldm p{
     font-size: .75rem;
     font-weight: 100;
 }
 .footer_ldm p a{
-    color: var(--white-color);
+    color: var(--neutral-200-color);
 }
 .footer_ldm p a:hover{
     color: var(--siena-color);
