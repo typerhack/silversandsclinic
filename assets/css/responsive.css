@@ -78,4 +78,15 @@
         justify-content: center;
         margin-bottom: 1.5rem;
     }
+    /*------------------------------------------*/
+    /*Styling the home page*/
+    .home_banner{
+        flex-direction: column;
+    }
+    .home_banner_heading_text{
+        order:1;
+    }
+    .home_banner_left_note{
+        order:2;
+    }
 }

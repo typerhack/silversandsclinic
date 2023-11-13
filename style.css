@@ -291,6 +291,7 @@ a:hover{
     margin: 1rem 0;
 }
 .footer_container ul li{
+    display: flex;
     margin: 1rem 0;
     color: var(--neutral-200-color);
     font-family: PeydaWeb, 'serif';
@@ -364,7 +365,7 @@ a:hover{
     text-transform: uppercase;
     font-family: "Playfair Display SC",serif;
     font-weight: normal;
-    font-size: 0.875rem;
+    font-size: clamp(0.5rem, 0.4114rem + 0.3863vw, 0.875rem);
     writing-mode: vertical-lr;
     text-orientation: mixed;
     transform: rotate(180deg);
@@ -374,7 +375,7 @@ a:hover{
 }
 .home_banner_left_note_line{
     width: 1px; /* Adjust the width as needed */
-    height: 5rem;
+    height: clamp(2.5rem, 2.2046rem + 1.2878vw, 3.75rem);;
     background-color: var(--neutral-400-color);
 }
 .home_banner_heading_container{
@@ -382,19 +383,214 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: clamp(0.1015625rem, -5.0734rem + 22.5612vw, 22rem);;
-    margin-left: clamp(0.1015625rem, -3.8918rem + 17.4099vw, 17rem);;
+    margin-right: clamp(1.25rem, -5.0734rem + 22.5612vw, 22rem);;
+    margin-left: clamp(1.25rem, -3.8918rem + 17.4099vw, 17rem);;
 }
 .home_banner_heading_text{
     text-transform: uppercase;
     font-family: "Playfair Display SC", serif;
-    font-size: clamp(0.140625rem, -1.0077rem + 5.0064vw, 5rem);;
+    font-size: clamp(1.8rem, -1.0077rem + 5.0064vw, 5rem);;
     font-weight: normal;
+    line-height: clamp(2.5rem, 1.4366rem + 4.6362vw, 7rem);
 }
 .home_banner_heading_text span{
-    font-size: clamp(0.171875rem, -1.2054rem + 6.0045vw, 6rem);;
+    font-size: clamp(2rem, -1.2054rem + 6.0045vw, 6rem);;
 }
 .home_banner_heading_image{
     vertical-align: middle;
-    width: clamp(0.3125rem, -2.095rem + 10.4958vw, 10.5rem);;
+    width: clamp(4rem, -2.095rem + 10.4958vw, 10.5rem);
+
+}
+.home_banner_button_container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin: 3.5rem 0;
+}
+.btn_black{
+    font-family: PeydaWeb, 'serif';
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: normal;
+    padding: 0.75rem 5.3rem;
+    color: var(--white-color);
+    background-color: var(--neutral-900-color);
+    border-radius: 7rem;
+    fill: var(--white-color);
+    transition-duration: 0.2s;
+}
+/*------------------------------------------*/
+/*Styling the buttons*/
+.btn_black svg{
+    margin-left: .6rem;
+}
+.btn_white{
+    font-family: PeydaWeb, 'serif';
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: normal;
+    padding: 0.75rem 5.3rem;
+    color: var(--neutral-900-color);
+    background-color: var(--white-color);
+    border: solid 2px var(--neutral-900-color);
+    border-radius: 7rem;
+    transition-duration: 0.2s;
+}
+.btn_black:hover{
+    background-color: var(--siena-color);
+    color: var(--white-color);
+    transform: scale(1.1);
+}
+.btn_white:hover{
+    color: var(--siena-color);
+    border-color: var(--siena-color);
+    transform: scale(1.1);
+}
+/*------------------------------------------*/
+/*Styling the home page service ticker*/
+.service_ticker_container{
+    overflow: hidden;
+    background-color: var(--neutral-200-color);
+    height: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(calc(-100% / 4), 0, 0); /* Example: adjust based on the number of items */
+    }
+}
+.service_ticker{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    animation: ticker linear infinite;
+    animation-duration: calc(1s * 4);
+    justify-content: space-between;
+}
+.service_ticker_item{
+    color: var(--neutral-700-color);
+    font-family: PeydaWeb, 'serif';
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: normal;
+    margin:0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.service_ticker_item img{
+    margin-left: .5rem;
+}
+/*------------------------------------------*/
+/*Styling the home page service section*/
+.header_line{
+    width: 5.5rem;
+    height: 1px;
+    background-color: var(--neutral-900-color);
+    margin-left: 1.5rem;
+}
+.home_clinic_services{
+    padding-top: 5rem;
+    padding-bottom: 5rem ;
+    display: flex;
+    flex-direction: column;
+}
+.home_clinic_services_text{
+    width: 50%;
+    margin-bottom: 3.75rem;
+    color: var(--neutral-900-color);
+}
+.home_clinic_services_text_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.home_clinic_services_text_content{
+    color: var(--neutral-700-color);
+    padding-right: 7rem;
+}
+.home_clinic_services_sections_container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    justify-content: space-around;
+}
+.home_clinic_services_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+}
+.home_clinic_services_section_image{
+    width: 19.5rem;
+    height: 12rem;
+}
+.home_clinic_services_section img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25rem;
+
+}
+.home_clinic_services_section_image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 25rem;
+    transition-duration: .3s;
+}
+.home_clinic_services_section_image_overlay{
+    background-color: rgba(192,154,133,60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: .3s;
+    border-radius: 25rem;
+}
+.home_clinic_services_section_image_overlay_text{
+    color: var(--white-color);
+}
+.home_clinic_services_section_image_overlay_icon, .home_clinic_services_section_image_overlay_text{
+    transition-duration: .3s;
+}
+.home_clinic_services_section_image_overlay_icon img{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+.home_clinic_services_section:hover .home_clinic_services_section_image_overlay{
+    opacity: 1;
+}
+.home_clinic_services_section:hover .home_clinic_services_section_image{
+    transform-origin: top;
+    transform: scaleY(1.2);
+}
+.home_clinic_services_section:hover .home_clinic_services_section_image_overlay_icon,.home_clinic_services_section:hover .home_clinic_services_section_image_overlay_text{
+    transform-origin: top;
+    transform: scaleY(calc(1/1.2));
+}
+
+.home_clinic_services_section>h3{
+    transition-duration: .3s;
+}
+.home_clinic_services_section:hover>h3{
+    transform: translateY(40px);
 }

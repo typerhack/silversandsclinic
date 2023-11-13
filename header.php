@@ -17,4 +17,4 @@
     get_template_part( 'templates/header_content' );
 ?>
 
-<div id="content" class="body_padding site-content">
+<div id="content" class="site-content">
